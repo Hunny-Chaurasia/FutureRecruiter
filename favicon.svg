@@ -145,13 +145,4 @@
     <path d="M 480,162 L 481,167 L 486,168 L 481,169 L 480,174 L 479,169 L 474,168 L 479,167 Z" fill="#bbfaff"/>
   </g>
 
-  <!-- Typography Suite -->
-  <!-- "FutuRecruiter" Unified Deep Branding Navy Text -->
-  <text x="400" y="685" 
-        font-family="System-UI, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" 
-        font-weight="800" 
-        font-size="76" 
-        fill="#112b4e" 
-        text-anchor="middle" 
-        letter-spacing="-2">FutuRecruiter</text>
 </svg>
