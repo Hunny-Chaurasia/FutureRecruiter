@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <!-- Color Gradients -->
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066ff"/>
+      <stop offset="60%" stop-color="#0099cc"/>
+      <stop offset="100%" stop-color="#00ccff"/>
+    </linearGradient>
+    
+    <linearGradient id="aiNodeGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0055cc"/>
+      <stop offset="50%" stop-color="#00aaff"/>
+      <stop offset="100%" stop-color="#33ffff"/>
+    </linearGradient>
+
+    <linearGradient id="arrowGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#0033aa"/>
+      <stop offset="70%" stop-color="#00aaff"/>
+      <stop offset="100%" stop-color="#99ffff"/>
+    </linearGradient>
+    
+    <!-- Drop Shadow for Depth -->
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#001133" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background Layer (Optional/Transparent) -->
+  <rect width="100%" height="100%" fill="none"/>
+
+  <g filter="url(#dropShadow)">
+    <!-- Outer Shield / Guard Container -->
+    <path d="M 400,160 
+             C 470,185 535,185 560,220 
+             C 560,360 510,460 400,530 
+             C 290,460 240,360 240,220 
+             C 265,185 330,185 400,160 Z" 
+          fill="none" stroke="url(#shieldGrad)" stroke-width="14" stroke-linejoin="round"/>
+          
+    <!-- Decorative Internal Shield Accent Lines -->
+    <path d="M 260,235 C 320,250 480,250 540,235" fill="none" stroke="#0099cc" stroke-width="4" opacity="0.3"/>
+
+    <!-- Left Document: RESUME -->
+    <g transform="translate(295, 275)">
+      <!-- Card Base -->
+      <rect x="0" y="0" width="90" height="120" rx="8" fill="#ffffff" stroke="#0055cc" stroke-width="5"/>
+      <!-- Header Badge / Text -->
+      <text x="12" y="28" font-family="Arial, sans-serif" font-weight="900" font-size="18" fill="#0055cc" letter-spacing="1">CV</text>
+      <!-- Graphic Lines representing layout -->
+      <line x1="12" y1="45" x2="78" y2="45" stroke="#0055cc" stroke-width="5" stroke-linecap="round"/>
+      <line x1="12" y1="60" x2="65" y2="60" stroke="#a0c0ff" stroke-width="4" stroke-linecap="round"/>
+      <line x1="12" y1="75" x2="78" y2="75" stroke="#a0c0ff" stroke-width="4" stroke-linecap="round"/>
+      <line x1="12" y1="90" x2="50" y2="90" stroke="#a0c0ff" stroke-width="4" stroke-linecap="round"/>
+      <!-- Checkmark Indicator -->
+      <path d="M -25,20 L -17,28 L -2,10" fill="none" stroke="#00ccff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Right Document: JOB DESCRIPTION (JD) -->
+    <g transform="translate(415, 275)">
+      <!-- Card Base -->
+      <rect x="0" y="0" width="90" height="120" rx="8" fill="#ffffff" stroke="#0088cc" stroke-width="5"/>
+      <!-- Header Badge / Text -->
+      <text x="12" y="28" font-family="Arial, sans-serif" font-weight="900" font-size="18" fill="#0088cc" letter-spacing="1">JD</text>
+      <!-- Graphic Lines representing layout -->
+      <line x1="12" y1="45" x2="78" y2="45" stroke="#0088cc" stroke-width="5" stroke-linecap="round"/>
+      <line x1="12" y1="60" x2="78" y2="60" stroke="#a0e0ff" stroke-width="4" stroke-linecap="round"/>
+      <line x1="12" y1="75" x2="55" y2="75" stroke="#a0e0ff" stroke-width="4" stroke-linecap="round"/>
+      <line x1="12" y1="90" x2="70" y2="90" stroke="#a0e0ff" stroke-width="4" stroke-linecap="round"/>
+      <!-- Checkmark Indicator -->
+      <path d="M 100,20 L 108,28 L 123,10" fill="none" stroke="#00ccff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Shortlisting Funnel & Matching Mechanics -->
+    <path d="M 280,390 C 310,430 320,470 360,490 L 440,490 C 480,470 490,430 520,390 C 470,415 330,415 280,390 Z" fill="#002255"/>
+
+    <!-- Candidate Profiles Inside Funnel (Shortlisted Output) -->
+    <g fill="#002255">
+      <!-- Left Candidate -->
+      <circle cx="345" cy="455" r="12" />
+      <path d="M 325,482 C 325,470 332,470 345,470 C 358,470 365,470 365,482 Z" />
+      <!-- Right Candidate -->
+      <circle cx="455" cy="455" r="12" />
+      <path d="M 435,482 C 435,470 442,470 455,470 C 468,470 475,470 475,482 Z" />
+      <!-- Selected Center Candidate (Stepping forward) -->
+      <circle cx="400" cy="505" r="15" fill="#003377"/>
+      <path d="M 375,538 C 375,522 384,522 400,522 C 416,522 425,522 425,538 Z" fill="#003377"/>
+    </g>
+
+    <!-- AI Core Processing Hub & Dynamic Matching Arrow -->
+    <!-- The Matching Arrow Rising Out of the Intersection -->
+    <path d="M 400,430 L 400,280 L 375,285 L 400,230 L 425,285 L 400,280" 
+          fill="none" stroke="url(#arrowGrad)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Top AI Lens / Target Node -->
+    <circle cx="400" cy="210" r="45" fill="url(#aiNodeGrad)" stroke="#ffffff" stroke-width="4" />
+    
+    <!-- Neural Network / AI Selector Icon Details inside Circle -->
+    <circle cx="400" cy="210" r="10" fill="#ffffff"/>
+    <line x1="400" y1="210" x2="380" y2="190" stroke="#ffffff" stroke-width="4"/>
+    <circle cx="380" cy="190" r="5" fill="#ffffff"/>
+    <line x1="400" y1="210" x2="425" y2="195" stroke="#ffffff" stroke-width="4"/>
+    <circle cx="425" cy="195" r="5" fill="#ffffff"/>
+    <line x1="400" y1="210" x2="390" y2="235" stroke="#ffffff" stroke-width="4"/>
+    <circle cx="390" cy="235" r="5" fill="#ffffff"/>
+    <line x1="400" y1="210" x2="420" y2="225" stroke="#ffffff" stroke-width="4"/>
+    <circle cx="420" cy="225" r="5" fill="#ffffff"/>
+
+    <!-- Sparkling "Successful Match" Stars -->
+    <path d="M 445,155 L 448,165 L 458,168 L 448,171 L 445,181 L 442,171 L 432,168 L 442,165 Z" fill="#33ffff"/>
+    <path d="M 465,180 L 467,185 L 472,187 L 467,189 L 465,194 L 463,189 L 458,187 L 463,185 Z" fill="#99ffff"/>
+  </g>
+
+  <!-- Typography Section -->
+  <!-- "FutuRecruiter" Brand Text unified in uniform Deep Corporate Navy -->
+  <text x="400" y="665" 
+        font-family="System-UI, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" 
+        font-weight="800" 
+        font-size="62" 
+        fill="#112b4e" 
+        text-anchor="middle" 
+        letter-spacing="-1.5">FutuRecruiter</text>
+
+  <!-- Core Functionality Subtitle -->
+  <text x="400" y="710" 
+        font-family="System-UI, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" 
+        font-weight="700" 
+        font-size="18" 
+        fill="#0077aa" 
+        text-anchor="middle" 
+        letter-spacing="4.5">AI RESUME TO JD SHORTLISTING</text>
+</svg>
